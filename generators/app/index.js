@@ -1,3 +1,5 @@
+'use strict';
+
 const chalk = require('chalk'),
 	Generator = require('yeoman-generator'),
 	validateElementName = require('validate-element-name');
@@ -26,7 +28,7 @@ class ElementGenerator extends Generator {
 			{
 				name: 'name',
 				type: 'input',
-				message: `Element name (must start with d2l-)`,
+				message: 'Element name (must start with d2l-)',
 				default: this.appname + (this.appname.includes('-') ? '' : '-element'),
 				validate: function(name) {
 					if (!name.startsWith('d2l-')) {
@@ -60,7 +62,8 @@ class ElementGenerator extends Generator {
 	}
 
 	writing() {
-		const name = this.props.name;
+		const name = this.props.name,
+			shortName = this.props.shortName;
 
 		this.fs.copyTpl(
 			`${this.templatePath()}/**/?(.)*`,
@@ -78,13 +81,13 @@ class ElementGenerator extends Generator {
 
 		this.fs.copyTpl(
 			this.templatePath('test/_element_test.html'),
-			`test/${name}_test.html`,
+			`test/${shortName}.html`,
 			this.props
 		);
 
 		this.fs.copyTpl(
 			this.templatePath('test/index.html'),
-			`test/index.html`,
+			'test/index.html',
 			this.props
 		);
 
@@ -107,6 +110,6 @@ class ElementGenerator extends Generator {
 		this.log(chalk.bold('\nSetup Complete!'));
 		this.log('Check out your new project README for information about what to do next.\n');
 	}
-};
+}
 
 module.exports = ElementGenerator;
