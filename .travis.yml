@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: LiuWQ0tkHPsyXEfBJQ7XG2xowibBhnhbL2Dtx4nG3o7BhVzmS2AnOPPANdIh/HevF0bRKItIzjnfzZaFtuBW+4HtBoAqjeIswerkEgRBRFlXCwiQ4rH4qPewW5Uy7S7YOLjHaz0x7y5/Plt/SzhXTiZY47Ydk543kkKZHiPlIC/NGCDDsZLZRaxvVEMyNt1BChET1gtHSMNpbMHGAAGm1zZauvaXV/HMhnKf5kL0U1Pk1Bd7uld2pZrBRJJqkcsr27B629jFhNGbT76zpzYIaMcNwWzMbzqceWVq20qh/lhh7V992L+NPp8466zQ5rkwszB5zyKUhUMG/eFYVYYeog4YKn8RISAAD3eo25EYsGqhvnjC28IFsxiR8I5Xv5b6v5WcLY5VntibErNoAxavQpsXJJ0VtiZbW4MxE3wM1zFTOIzbcm/yWkvaenkwQT0I3CZHp7A+WxGegax4y6Skg0M4pw13IcNPOwVsOA5aHrQM6nR6a6yY9+fDUaBQcCNeqHhhcWrCHCwdzBor05pqMhfwy9QsP9ljvfGGfrcgwFx8YChYRLa2OjnDLtasAZEdexl8tSeiLO47SLQM1qzn+Bjd6puvw+y2ZrP/RV0KSi6k+hcwkqBqDt6R5mBSZ/XFHNrI03cVxFzvl6EzmLtRYTE47xKbABAvJyzQOshdKcg=
+  on:
+    tags: true
+    repo: Brightspace/generator-polymer-init-d2l-hybrid-element
