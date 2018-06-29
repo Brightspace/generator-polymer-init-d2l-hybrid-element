@@ -7,7 +7,9 @@
     "url": "https://github.com/Brightspace/generator-polymer-init-d2l-hybrid-element.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && npm run unit",
+    "lint": "eslint generators/app/index.js test/app.js",
+    "unit": "mocha"
   },
   "keywords": [
     "polymer",
@@ -25,5 +27,12 @@
     "chalk": "^2.4.1",
     "validate-element-name": "^2.1.1",
     "yeoman-generator": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-brightspace": "^0.4.0",
+    "mocha": "^5.2.0",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.8.0"
   }
 }

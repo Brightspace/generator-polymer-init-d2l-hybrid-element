@@ -1,4 +1,7 @@
 # generator-polymer-init-d2l-hybrid-element
+[![NPM version][npm-image]][npm-url]
+[![Build status][ci-image]][ci-url]
+[![Dependency Status][dependencies-image]][dependencies-url]
 
 Template for creating BrightspaceUI Polymer `1.x`/`2.x` hybrid elements.
 
@@ -38,3 +41,32 @@ polymer init d2l-hybrid-element
 ```
 
 That's it! Follow the instructions in the `README` to learn how to get a local development server running and run the tests.
+
+## Developing and Contributing
+
+Pull requests welcome!
+
+After cloning the repo, install dependencies: `npm install`.
+
+To run unit tests: `npm test`
+
+### Running the generator locally
+
+To avoid having to publish to NPM just to test out your local changes, you can run a local copy.
+
+First, from the root of the `generator-polymer-init-d2l-hybrid-element`, run: `npm link`
+
+That's pretty much it. Now create a new empty project to try it out and run `polymer init`. Choosing the generator from the list should run your local code.
+
+### Publishing to NPM
+
+Publishing happens automatically from Travis CI whenever there's a tagged commit. The easiest way to kick that off is through GitHub's "Releases" tab.
+
+Just make sure you've incremented the `version` in `package.json`.
+
+[npm-url]: https://npmjs.org/package/generator-polymer-init-d2l-hybrid-element
+[npm-image]: https://img.shields.io/npm/v/generator-polymer-init-d2l-hybrid-element.svg
+[ci-image]: https://travis-ci.org/Brightspace/generator-polymer-init-d2l-hybrid-element.svg?branch=master
+[ci-url]: https://travis-ci.org/Brightspace/generator-polymer-init-d2l-hybrid-element
+[dependencies-url]: https://david-dm.org/brightspace/generator-polymer-init-d2l-hybrid-element
+[dependencies-image]: https://img.shields.io/david/Brightspace/generator-polymer-init-d2l-hybrid-element.svg
