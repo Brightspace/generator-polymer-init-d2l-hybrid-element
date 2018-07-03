@@ -5,6 +5,8 @@
 
 Template for creating BrightspaceUI Polymer `1.x`/`2.x` hybrid elements.
 
+> Looking for our Polymer 2 element generator? [It's over here](https://github.com/Brightspace/generator-polymer-init-d2l-polymer-2-element).
+
 With the template, you get:
 * Project boilerplate including: `.editorconfig`, `.gitignore`, `bower.json`, `package.json`, `polymer.json`, `CODEOWNERS` and `LICENSE` (Apache-2.0)
 * A basic Polymer hybrid element scaffold
