@@ -80,7 +80,7 @@ class ElementGenerator extends Generator {
 		);
 
 		this.fs.copyTpl(
-			this.templatePath('test/_element_test.html'),
+			this.templatePath('test/_element.html'),
 			`test/${shortName}.html`,
 			this.props
 		);
