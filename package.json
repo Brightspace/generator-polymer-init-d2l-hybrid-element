@@ -1,7 +1,7 @@
 {
   "name": "generator-polymer-init-d2l-hybrid-element",
   "version": "0.0.1",
-  "description": "Template for creating BrightspaceUI Polymer 1.x/2.x hybrid elements.",
+  "description": "Template for creating BrightspaceUI Polymer 1.x/2.x hybrid elements",
   "repository": {
     "type": "git",
     "url": "https://github.com/Brightspace/generator-polymer-init-d2l-hybrid-element.git"
