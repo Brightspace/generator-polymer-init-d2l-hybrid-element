@@ -92,9 +92,30 @@ class ElementGenerator extends Generator {
 		);
 
 		this.fs.move(
+			this.destinationPath('editorconfig'),
+			this.destinationPath('.editorconfig')
+		);
+
+		this.fs.move(
+			this.destinationPath('eslintrc.json'),
+			this.destinationPath('.eslintrc.json')
+		);
+
+		this.fs.move(
+			this.destinationPath('test/eslintrc.json'),
+			this.destinationPath('test/.eslintrc.json')
+		);
+
+		this.fs.move(
 			this.destinationPath('gitignore'),
 			this.destinationPath('.gitignore')
 		);
+
+		this.fs.move(
+			this.destinationPath('travis.yml'),
+			this.destinationPath('.travis.yml')
+		);
+
 	}
 
 	install() {
